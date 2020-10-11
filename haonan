@@ -1,0 +1,148 @@
+from turtle import Turtle, mainloop
+def word1():
+    p.penup()
+    p.forward(60)
+    p.pendown()
+    p.right(90)
+    p.forward(100)
+    p.left(90)
+
+def word2():
+    p.forward(60)
+    p.right(90)
+    p.forward(50)
+    p.right(90)
+    p.forward(60)
+    p.left(90)
+    p.forward(50)
+    p.left(90)
+    p.forward(60)
+
+def word3():
+    p.forward(60)
+    p.right(90)
+    p.forward(50)
+    p.right(90)
+    p.forward(60)
+    p.backword(60)
+    p.left(90)
+    p.forward(50)
+    p.right(90)
+    p.forward(60)
+    p.left(180)
+
+def word4():
+    p.right(90)
+    p.forward(50)
+    p.left(90)
+    p.forward(60)
+    p.left(90)
+    p.forward(50)
+    p.backward(100)
+    p.right(90)
+
+def word5():
+    p.forward(60)
+    p.left(180)
+    p.forward(60)
+    p.left(90)
+    p.forward(50)
+    p.left(90)
+    p.forward(60)
+    p.right(90)
+    p.forward(50)
+    p.right(90)
+    p.forward(60)
+    p.left(180)
+    
+def word6():
+    p.forward(60)
+    p.backward(60)
+    p.right(90)
+    p.forward(100)
+    p.left(90)
+    p.forward(60)
+    p.left(90)
+    p.forward(50)
+    p.left(90)
+    p.forward(60)
+    p.left(180)
+
+def word7():
+    p.forward(60)
+    p.right(90)
+    p.forward(100)
+    p.left(90)
+
+def word8():
+    p.forward(60)
+    p.right(90)
+    p.forward(100)
+    p.right(90)
+    p.forward(60)
+    p.right(90)
+    p.forward(100)
+    p.left(180)
+    p.forward(50)
+    p.left(90)
+    p.forward(60)
+
+def word9():
+    p.forward(60)
+    p.right(90)
+    p.forward(100)
+    p.right(90)
+    p.forward(60)
+    p.left(180)
+    p.forward(60)
+    p.left(90)
+    p.forward(50)
+    p.left(90)
+    p.forward(60)
+    p.right(90)
+    p.forward(50)
+    p.right(90)
+
+def word0():
+    p.forward(60)
+    p.right(90)
+    p.forward(100)
+    p.right(90)
+    p.forward(60)
+    p.right(90)
+    p.forward(100)
+    p.right(90)
+
+from turtle import Turtle, mainloop
+
+date=input("请输入一个八位数的日期（例如：20200603）：")
+
+for i in range(0,8):
+    p=Turtle()
+    p.hideturtle()
+    p.pensize(5)
+    p.penup()
+    p.goto(-310+80*i,50)
+    p.pendown()
+    if date[i]=='1':
+        word1()
+    elif date[i]=='2':
+        word2()
+    elif date[i]=='3':
+        word3()
+    elif date[i]=='4':
+        word4()
+    elif date[i]=='5':
+        word5()
+    elif date[i]=='6':
+        word6()
+    elif date[i]=='7':
+        word7()
+    elif date[i]=='8':
+        word8()
+    elif date[i]=='9':
+        word9()
+    else:
+        word0()
+
+
