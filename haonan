@@ -120,7 +120,7 @@ date=input("请输入一个八位数的日期（例如：20200603）：")
 for i in range(0,8):
     p=Turtle()
     p.hideturtle()
-    p.pensize(5)
+    p.pensize(10)
     p.penup()
     p.goto(-310+80*i,50)
     p.pendown()
